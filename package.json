@@ -1,0 +1,30 @@
+{
+  "productName": "el_test",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV='development' yarn run start",
+    "dist": "electron-builder build",
+    "pack": "electron-builder --dir",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron-builder": "^19.27.7"
+  },
+  "build": {
+    "asar": false,
+    "win": {
+      "target": ["nsis"],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "allowElevation": true,
+      "runAfterFinish": false,
+      "createDesktopShortcut": true,
+      "menuCategory": true,
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico"
+    },
+    "electronVersion": "1.8.1"
+  }
+}

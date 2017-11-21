@@ -1,0 +1,12 @@
+{
+
+  "main":"master.js",
+  "description": "el_test",
+  "name": "el_test",
+  "version": "1.0.0",
+  "productName": "el_test",
+  "author": "A.Heathcliff",
+  "devDependencies": {
+    "electron" : "1.8.1"
+  }
+}
