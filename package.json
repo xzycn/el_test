@@ -25,6 +25,6 @@
       "installerIcon": "build/icon.ico",
       "uninstallerIcon": "build/icon.ico"
     },
-    "electronVersion": "1.8.1"
+    "electronVersion": "1.8.2-beta.4"
   }
 }
